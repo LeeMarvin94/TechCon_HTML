@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCon 2024 Conference</title>
 </head>
 <body>
 
-    <header>
-        <h1>TechCon 2024 conference</h1>
-        <nav>
-            <ul>
-                <li> <a href="about">About</a></li>
-                <li> <a href="schedule">Schedule</a></li>
-                <li> <a href="register">Register</a></li>
-                <li> <a href="contact">Contact</a></li>
-            </ul>
-            
-        </nav>
-    </header>
+  <header>
+    <h1>TechCon 2024 Conference</h1>
+    <nav>
+      <ul>
+        <li><a href="about">About</a></li>
+        <li><a href="schedule">Schedule</a></li>
+        <li><a href="register">Register</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
+  <main>
+    <section>
+      <p>Here is the Tech Conference 2024</p>
 
-        <section>
-            <p>Here is the TEch Conference 2024</p>
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/X-bXe-yNa5Y"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-</iframe>
+      <!-- YouTube embed (still fine to keep) -->
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/X-bXe-yNa5Y"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
 
+      <!-- Required HTML5 <video> element with controls -->
+      <video width="560" height="315" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-        </section>
+    </section>
+  </main>
 
-    </main>
+  <footer>
+    <p>Copyright &copy; <span id="year"></span> TechCon 2024. All rights reserved.</p>
+  </footer>
 
-<footer>
-  <p>Copyright &copy; <span id="year"></span> My Event. All rights reserved.</p>
-</footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-    
 </body>
 </html>
